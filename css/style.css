@@ -1,0 +1,63 @@
+canvas{
+	border: 1px solid #333;
+	width: 80vw;
+	height: 70vh;
+}
+
+.load-image{
+	margin: 1rem;
+}
+
+.load-image input{
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #777;
+	padding: .5rem 1rem;
+	width: 300px;
+}
+
+.load-image input:focus{
+	border-bottom: 1px solid #111;
+}
+
+#img{
+	display: none;
+}
+
+#log{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 20vh;
+	border: 1px solid #333;
+	font-family: monospace;
+	vertical-align: middle;
+}
+
+#log .content{
+	overflow-y: scroll;
+	height: 20vh;
+}
+
+#log div{
+	border-bottom: 1px solid #ccc;
+}
+
+#log .header{
+	padding: 0 5px;
+	border-bottom: 1px solid #333;
+	background: #eee;
+	user-select: none;
+}
+
+#log .time{
+	float: right;
+	color: #777;
+	padding-right: 10px;
+	font-size: .8rem;
+	line-height: .9rem;
+	vertical-align: middle;
+	border-bottom: 0;
+	user-select: none;
+}
