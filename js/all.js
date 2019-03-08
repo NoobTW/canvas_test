@@ -62,9 +62,6 @@ $('#load').onclick = function(){
 
 		logger.log('Scaling to ' + width + '×' + height +'.');
 
-		console.log(width)
-		console.log(height)
-
 		ctx.drawImage($('#img'), 0, 0, width, height);
 	}, 500);
 }
@@ -78,4 +75,6 @@ $('#canvas').onmousedown = function(e) {
 	ctx.stroke();
 
 	logger.log('Clicking on ' + x + ',' + y + ' (' + Math.floor(x/ratio) + ',' + Math.floor(y/ratio) + ').');
+
+	axios.post('http://localhost:5000/data', {x: Math.floor(x/ratio), y: Math.floor(y/ratio)});
 }
